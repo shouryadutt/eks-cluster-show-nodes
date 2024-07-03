@@ -1,0 +1,12 @@
+data:
+  mapUsers: |
+    - userarn: arn:aws:iam::891376912626:user/K8user
+      username: K8user
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::891376912626:user/eksuser
+      username: eksuser
+      groups:
+        - system:masters
+        - system:nodes
+        - eks-console-dashboard-full-access-binding
